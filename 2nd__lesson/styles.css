@@ -1,0 +1,52 @@
+.formTitle {
+    color: blue;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: lightgray;
+    color: green;
+    width: 60%;   
+}
+
+#form__id {
+    color: #ff0000;
+}
+
+input, button, a, p {
+    margin: 10px 10px;
+    font-size: 1.2rem;
+}
+
+html {
+    font-size: 1.5vw;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+div .formTitle {
+    color: green;
+}
+
+button {
+    width: 10rem;
+}
+
+input {
+    width: 20rem;
+}
+
+p:hover {
+    color: black;
+}
