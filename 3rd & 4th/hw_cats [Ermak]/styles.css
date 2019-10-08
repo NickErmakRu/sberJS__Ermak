@@ -1,0 +1,40 @@
+select {
+    width: 20rem;;
+    margin: auto;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#allCatImformation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#catSelector {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    margin-top: 25px;
+}
+
+#titleName {
+    margin-bottom: 5px;
+}
+
+#eyeDiv, #genderDiv {
+    height: 30px;
+}
+
+#filmList {
+    width: 150px;
+}
+
+.kitPic {
+    margin-left: 100px;
+    width: 300px;
+}
