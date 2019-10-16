@@ -8,7 +8,9 @@ const order = document.getElementById('myOrder');
 const cherry = document.getElementById('cherryBonus');
 const milk = document.getElementById('Milk');
 const price = document.getElementById('finalPrice');
+const progressBar = document.getElementById('coffee-progress');
 
+console.log(coffee);
 
 let additives = {
     milk: 0,
@@ -80,6 +82,41 @@ const menu = [
     }
 ]
 
+
+
+order.addEventListener('click', function(){
+    if (order.classList.contains('youNeedToDoOrder') || order.classList.contains('orderDone')) {
+        coffeeProgress(60);
+    }
+});
+
+function coffeeProgress(time) {
+    let start = 0;
+    const interval = setInterval(function(){
+        if (start > 100) {
+            clearInterval(interval);
+        } else {
+            progressBar.value = start;
+        }
+        start++;
+    }, time);
+    
+    chosenDrink.innerHTML = '';
+    cherrySyrop.innerHTML = '';
+    newDrink.innerHTML = '';
+    price.innerHTML = '';
+    cherry.classList.remove('orderDone');
+    cherry.classList.remove('fullSize');
+    order.classList.remove('orderDone');
+    order.classList.remove('youNeedToDoOrder');
+    milk.classList.remove('notSimple');
+    additives.milk = 0;
+    additives.cherry = 0;
+    myPrice = 0;
+    startProcess = 0;
+    coffeeSize = 0;
+}
+
 function getPrice(elem) {
     price.innerHTML = '';
     menu.forEach(function(el){
@@ -112,28 +149,49 @@ function checkType(elem) {
     });
 }
 
+//function newOrder() {
+//    order.addEventListener('click', function(){
+//        if (order.classList.contains('youNeedToDoOrder')) {
+//            
+//            console.log('заказ на 8 секунд пошёл пошел');
+//            
+//        } else if (order.classList.contains('orderDone')) {
+//            console.log('заказ на 5 секунд пошёл пошел');
+//        }
+//    });
+//}
+//
+//newOrder();
 
-cancel.addEventListener('click', function(){
-    chosenDrink.innerHTML = '';
-    cherrySyrop.innerHTML = '';
-    newDrink.innerHTML = '';
-    price.innerHTML = '';
-    cherry.classList.remove('orderDone');
-    order.classList.remove('orderDone');
-    order.classList.remove('youNeedToDoOrder');
-    milk.classList.remove('notSimple');
-    additives.milk = 0;
-    additives.cherry = 0;
-    myPrice = 0;
-    startProcess = 0;
-    coffeeSize = 0;
-})
+
+function cancelOrder() {
+    cancel.addEventListener('click', function(){
+        chosenDrink.innerHTML = '';
+        cherrySyrop.innerHTML = '';
+        newDrink.innerHTML = '';
+        price.innerHTML = '';
+        cherry.classList.remove('orderDone');
+        cherry.classList.remove('fullSize');
+        order.classList.remove('orderDone');
+        order.classList.remove('youNeedToDoOrder');
+        milk.classList.remove('notSimple');
+        additives.milk = 0;
+        additives.cherry = 0;
+        myPrice = 0;
+        startProcess = 0;
+        coffeeSize = 0;
+    })
+}
+
+cancelOrder();
 
 
 coffee.forEach(function(elem){
     elem.addEventListener('click', function(){
         
-        if ((this.innerText == 'Молоко') && (newDrink.innerHTML == '')) {
+        progressBar.value = '';
+        
+       if ((this.innerText == 'Молоко') && (newDrink.innerHTML == '')) {
             chosenDrink.innerHTML = '';
             cherrySyrop.innerHTML = '';
             
@@ -149,10 +207,9 @@ coffee.forEach(function(elem){
             additives.milk = 0;
             additives.cherry = 0; 
             startProcess = 1;
+         
             
-            }
-                        
-        else if ((this.innerText == 'Молоко') && (newDrink.innerHTML != '') && (milk.classList.contains('notSimple') == false)) {
+        } else if ((this.innerText == 'Молоко') && (newDrink.innerHTML != '') && (milk.classList.contains('notSimple') == false)) {
     
             
             additives.milk++;
@@ -189,6 +246,7 @@ coffee.forEach(function(elem){
                     ) {
                         milk.classList.add('notSimple');
                         cherry.classList.remove('orderDone');
+                        cherry.classList.add('fullSize');
                         order.classList.remove('orderDone');
                         order.classList.add('youNeedToDoOrder');
                     }
@@ -219,12 +277,13 @@ coffee.forEach(function(elem){
             
             order.classList.remove('youNeedToDoOrder');
             order.classList.add('orderDone');
+            cherry.classList.remove('fullSize');
             
             additives.milk = 0;
             additives.cherry = 0; 
             
             
-        } else if ((this.innerText == 'Вишневый сироп') && (startProcess == 1) && (additives.cherry == 0)) {
+        } else if ((this.innerText == 'Вишневый сироп') && (startProcess == 1) && (additives.cherry == 0) && (cherry.classList.contains('fullSize') == false)) {
             
             const addCherry = document.createElement('p');
             addCherry.innerHTML = '+ добавить порцию вишневого сиропа';
@@ -249,13 +308,14 @@ coffee.forEach(function(elem){
                     ) {
                         milk.classList.add('notSimple');
                         cherry.classList.remove('orderDone');
+                        cherry.classList.add('fullSize');
                         order.classList.remove('orderDone');
                         order.classList.add('youNeedToDoOrder');
                     }
                 }
             });
             
-        } else if ((this.innerText == 'Вишневый сироп') && (additives.cherry == 1)) {
+        } else if ((this.innerText == 'Вишневый сироп') && (additives.cherry == 1) && (cherry.classList.contains('fullSize') == false)) {
             
             cherrySyrop.innerHTML = '';
             const addCherry = document.createElement('p');
@@ -291,4 +351,6 @@ coffee.forEach(function(elem){
     });
     
 })
+
+
 
