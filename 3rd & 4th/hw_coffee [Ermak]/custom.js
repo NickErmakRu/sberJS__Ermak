@@ -10,8 +10,6 @@ const milk = document.getElementById('Milk');
 const price = document.getElementById('finalPrice');
 const progressBar = document.getElementById('coffee-progress');
 
-console.log(coffee);
-
 let additives = {
     milk: 0,
     cherry: 0
@@ -85,8 +83,13 @@ const menu = [
 
 
 order.addEventListener('click', function(){
-    if (order.classList.contains('youNeedToDoOrder') || order.classList.contains('orderDone')) {
+    if (order.classList.contains('youNeedToDoOrder') || (additives.milk != 0) || (additives.cherry != 0)) {
         coffeeProgress(60);
+    }
+    else if ((newDrink.innerText == 'Эспрессо') || (newDrink.innerText == 'Латте') || (newDrink.innerText == 'Капучино')) {
+        coffeeProgress(20);
+    } else {
+        coffeeProgress(35);
     }
 });
 
@@ -149,19 +152,6 @@ function checkType(elem) {
     });
 }
 
-//function newOrder() {
-//    order.addEventListener('click', function(){
-//        if (order.classList.contains('youNeedToDoOrder')) {
-//            
-//            console.log('заказ на 8 секунд пошёл пошел');
-//            
-//        } else if (order.classList.contains('orderDone')) {
-//            console.log('заказ на 5 секунд пошёл пошел');
-//        }
-//    });
-//}
-//
-//newOrder();
 
 
 function cancelOrder() {
@@ -204,7 +194,7 @@ coffee.forEach(function(elem){
 
             order.classList.add('orderDone');
             
-            additives.milk = 0;
+            additives.milk = 1;
             additives.cherry = 0; 
             startProcess = 1;
          
