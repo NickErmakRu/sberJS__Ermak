@@ -1,4 +1,5 @@
 const coffee = [...document.getElementsByClassName('coffee')];
+const authorCoffee = [...document.getElementsByClassName('au-coffee')];
 const chosenDrink = document.getElementById('chosenDrink');
 const newDrink = document.getElementById('drinkName');
 const addMoreMilk = document.getElementById('addMoreMilk');
@@ -83,13 +84,31 @@ const menu = [
 
 
 order.addEventListener('click', function(){
-    if (order.classList.contains('youNeedToDoOrder') || (additives.milk != 0) || (additives.cherry != 0)) {
-        coffeeProgress(60);
-    }
-    else if ((newDrink.innerText == 'Эспрессо') || (newDrink.innerText == 'Латте') || (newDrink.innerText == 'Капучино')) {
-        coffeeProgress(20);
-    } else {
-        coffeeProgress(35);
+    
+    if (newDrink.innerHTML != '') {
+
+        if (coffeeSize > medium_cup.size) {
+            large_cup.count--;
+        } else if ((coffeeSize <= medium_cup.size) && (medium_cup.count < 1)) {
+            large_cup.count--;
+        } else {
+            medium_cup.count--;
+        }
+
+        checkCountsOfCups();
+
+//        console.log(`средних стаканов: ${medium_cup.count}`);
+//        console.log(`больших стаканов: ${large_cup.count}`);
+
+
+        if (order.classList.contains('youNeedToDoOrder') || (additives.milk != 0) || (additives.cherry != 0)) {
+            coffeeProgress(60);
+        }
+        else if ((newDrink.innerText == 'Эспрессо') || (newDrink.innerText == 'Латте') || (newDrink.innerText == 'Капучино')) {
+            coffeeProgress(20);
+        } else {
+            coffeeProgress(35);
+        }
     }
 });
 
@@ -131,9 +150,6 @@ function getPrice(elem) {
             myPrice = el.price;
             
             coffeeSize = el.size;
-            
-            console.log('объем напитка');
-            console.log(coffeeSize);
         }  
     });
 }
@@ -141,7 +157,10 @@ function getPrice(elem) {
 function checkType(elem) {
     menu.forEach(function(el){
         if (el.name == elem.innerText) {
-            if (el.type == 'author') {
+            if (((coffeeSize == 250) && (large_cup.count < 1)) || ((large_cup.count < 1) && (medium_cup.count < 1))) {
+                milk.classList.add('notSimple');
+                cherry.classList.remove('orderDone');
+            } else if (el.type == 'author') {
                 milk.classList.add('notSimple');
                 cherry.classList.remove('orderDone');
             } else {
@@ -150,6 +169,20 @@ function checkType(elem) {
             }
         }  
     });
+}
+
+function checkCountsOfCups() {
+    if ((large_cup.count < 1) && (medium_cup.count < 1)) {
+        milk.classList.add('outOfCups');
+        coffee.forEach((elem) => {
+           elem.classList.add('outOfCups'); 
+        });
+    }
+    if ((large_cup.count < 1) && (medium_cup.count > 0)) {
+        authorCoffee.forEach((elem) => {
+           elem.classList.add('outOfCups'); 
+        });
+    }
 }
 
 
@@ -181,7 +214,7 @@ coffee.forEach(function(elem){
         
         progressBar.value = '';
         
-       if ((this.innerText == 'Молоко') && (newDrink.innerHTML == '')) {
+       if ((this.innerText == 'Молоко') && (newDrink.innerHTML == '') && ((large_cup.count > 0) || (medium_cup.count > 0))) {
             chosenDrink.innerHTML = '';
             cherrySyrop.innerHTML = '';
             
@@ -226,10 +259,7 @@ coffee.forEach(function(elem){
                     showPrice.innerHTML = `${myPrice}`;
                     price.append(showPrice);
 
-
                     coffeeSize = coffeeSize + el.size;
-                    console.log('объем напитка');
-                    console.log(coffeeSize);
 
                     if (
                         (((coffeeSize + 50) > large_cup.size)) || (((coffeeSize + 50) > medium_cup.size) && (large_cup.count == 0))
@@ -244,7 +274,11 @@ coffee.forEach(function(elem){
             });
 
             
-        } else if ((this.innerText != 'Вишневый сироп') && (this.innerText != 'Молоко')) {
+        } else if ((this.innerText != 'Вишневый сироп') && (this.innerText != 'Молоко') && ((large_cup.count > 0) || (medium_cup.count > 0))) {
+            
+            if (elem.classList.contains('au-coffee') && (large_cup.count < 1)) {
+                newDrink.innerHTML = '';
+            } else {            
             
             menu.forEach(function(el){
                 if (el.name == elem.innerText) {
@@ -271,39 +305,40 @@ coffee.forEach(function(elem){
             
             additives.milk = 0;
             additives.cherry = 0; 
-            
+            }            
             
         } else if ((this.innerText == 'Вишневый сироп') && (startProcess == 1) && (additives.cherry == 0) && (cherry.classList.contains('fullSize') == false)) {
             
-            const addCherry = document.createElement('p');
-            addCherry.innerHTML = '+ добавить порцию вишневого сиропа';
-            cherrySyrop.append(addCherry);
-            additives.cherry = 1;
+            
+            if ((large_cup.count > 0) || ((coffeeSize <= 200) && (medium_cup.count > 0))) {
+            
+                const addCherry = document.createElement('p');
+                addCherry.innerHTML = '+ добавить порцию вишневого сиропа';
+                cherrySyrop.append(addCherry);
+                additives.cherry = 1;
 
-            price.innerHTML = '';
-            menu.forEach(function(el){
-                if (el.name == elem.innerText) {
-                    const showPrice = document.createElement('p');
-                    myPrice = myPrice + el.price;
-                    showPrice.innerHTML = `${myPrice}`;
-                    price.append(showPrice);
+                price.innerHTML = '';
+                menu.forEach(function(el){
+                    if (el.name == elem.innerText) {
+                        const showPrice = document.createElement('p');
+                        myPrice = myPrice + el.price;
+                        showPrice.innerHTML = `${myPrice}`;
+                        price.append(showPrice);
 
-                    coffeeSize = coffeeSize + el.size;
+                        coffeeSize = coffeeSize + el.size;
 
-                    console.log('объем напитка');
-                    console.log(coffeeSize);
-                    
-                    if (
-                        (((coffeeSize + 50) > large_cup.size)) || (((coffeeSize + 50) > medium_cup.size) && (large_cup.count == 0))
-                    ) {
-                        milk.classList.add('notSimple');
-                        cherry.classList.remove('orderDone');
-                        cherry.classList.add('fullSize');
-                        order.classList.remove('orderDone');
-                        order.classList.add('youNeedToDoOrder');
+                        if (
+                            (((coffeeSize + 50) > large_cup.size)) || (((coffeeSize + 50) > medium_cup.size) && (large_cup.count == 0))
+                        ) {
+                            milk.classList.add('notSimple');
+                            cherry.classList.remove('orderDone');
+                            cherry.classList.add('fullSize');
+                            order.classList.remove('orderDone');
+                            order.classList.add('youNeedToDoOrder');
+                        }
                     }
-                }
-            });
+                });
+            }
             
         } else if ((this.innerText == 'Вишневый сироп') && (additives.cherry == 1) && (cherry.classList.contains('fullSize') == false)) {
             
@@ -323,9 +358,6 @@ coffee.forEach(function(elem){
                     price.append(showPrice);
 
                     coffeeSize = coffeeSize + el.size;
-
-                    console.log('объем напитка');
-                    console.log(coffeeSize);
                     
                     if (
                         (((coffeeSize + 50) > large_cup.size)) || (((coffeeSize + 50) > medium_cup.size) && (large_cup.count == 0))
