@@ -1,0 +1,14 @@
+.random-char-details {
+    border: 2px solid black;
+    width: 20rem;
+    border-radius: 10%;
+    margin-left: 5rem;
+}
+
+.random-char-details p {
+    margin-left: 20px;
+}
+
+.random-char-details h4 {
+    text-align: center;
+}

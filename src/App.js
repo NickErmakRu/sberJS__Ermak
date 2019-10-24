@@ -2,18 +2,17 @@ import React from 'react';
 
 import Header from './components/header/header';
 import RandomHouse from './components/random-house/random-house';
+import OneRandomCharacter from './components/character-details/character-details';
 
 import './App.css';
 
 const App = () => {
   return (
-      <div>
+      <div className='App'>
         <Header />
-        <div className='random-house-page'>
+        <div className='random-info'>
           <RandomHouse />
-          <imgHouse />
         </div>
-
       </div>
   );
 };
