@@ -1,0 +1,26 @@
+.random-spell-details {
+    width: 20rem;
+    height: 12rem;
+    margin-right: 0;
+    text-align: center;
+
+    border: 2px solid black;
+    border-radius: 20%;
+
+    font-family: 'Exo 2', sans-serif;
+}
+
+.spellName {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.spell {
+    width: 90%;
+    margin: auto;
+}
+
+.spellEffect {
+    margin-top: 1rem;
+    font-style: italic;
+}

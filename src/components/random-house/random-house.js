@@ -2,9 +2,11 @@ import React from 'react';
 
 import HapiService from '../../services/hapi-service';
 import OneRandomCharacter from '../character-details/character-details';
+import Spinner from '../spinner/spinner';
 
 
 import './random-house.css'
+import '../spinner/spinner.css'
 
 export default class RandomHouse extends React.Component {
 
@@ -18,7 +20,8 @@ export default class RandomHouse extends React.Component {
         headOfHouse: null,
         houseGhost: null,
         colors: null,
-        imgSrc: null
+        imgSrc: null,
+        loading: true
     };
 
     constructor() {
@@ -61,7 +64,8 @@ export default class RandomHouse extends React.Component {
                     headOfHouse: house[0].headOfHouse,
                     houseGhost: house[0].houseGhost,
                     colors: house[0].colors.join(', '),
-                    imgSrc
+                    imgSrc,
+                    loading: false
                 });
             });
     }
@@ -69,7 +73,18 @@ export default class RandomHouse extends React.Component {
     render() {
 
         const { name, founder, headOfHouse,
-            mascot, houseGhost, colors, imgSrc } = this.state;
+            mascot, houseGhost, colors, imgSrc, loading } = this.state;
+
+        if (loading) {
+            return (
+                <React.Fragment>
+                    <div className='random-house-wrapper'>
+                        <Spinner />
+                    </div>
+                    <div className='spaceEater'></div>
+                </React.Fragment>
+            );
+        }
 
         return (
             <React.Fragment>
@@ -84,10 +99,13 @@ export default class RandomHouse extends React.Component {
                             <p>Цвета: {colors}</p>
                         </div>
                     </div>
-                    <img src={imgSrc}/>
+                    <div className='houseImg'>
+                        <img src={imgSrc}/>
+                    </div>
                 </div>
                 <OneRandomCharacter house={name}/>
             </React.Fragment>
         )
     }
+
 }

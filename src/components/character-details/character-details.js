@@ -1,8 +1,10 @@
 import React from 'react';
 
 import HapiService from '../../services/hapi-service';
+import Spinner from '../spinner/spinner';
 
 import './character-details.css'
+import '../spinner/spinner.css'
 
 export default class OneRandomCharacter extends React.Component {
 
@@ -16,7 +18,8 @@ export default class OneRandomCharacter extends React.Component {
         role: null,
         wand: null,
         patronus: null,
-        boggart: null
+        boggart: null,
+        loading: true
     };
 
     constructor() {
@@ -29,14 +32,19 @@ export default class OneRandomCharacter extends React.Component {
         this.hapiService
             .getAllCharacters()
             .then((characters) => {
-
+                console.log(this.props.house);
                 const character = [];
                 characters.forEach((person) => {
-                    if (person.house == this.props.house)
-                        character.push(person);
-                })
-                const num = Math.floor(Math.random()*character.length);
+                    if (person.hasOwnProperty('house')) {
+                        if ((person.species === 'human') &&
+                            (person.house === this.props.house)) {
+                            character.push(person);
+                        }
+                    }
+                });
+                console.log(character);
 
+                const num = Math.floor(Math.random()*(character.length-1));
                 this.setState({
                     name: character[num].name,
                     alias: character[num].alias,
@@ -45,14 +53,25 @@ export default class OneRandomCharacter extends React.Component {
                     wand: character[num].wand,
                     patronus: character[num].patronus,
                     boggart: character[num].boggart,
-                    house: character[num].house
+                    house: character[num].house,
+                    loading: false
                 });
             });
     }
 
     render() {
 
-        const { name, role, alias, wand, bloodstatus, patronus, boggart, house } = this.state;
+        const { name, role, alias, wand, bloodstatus, patronus, boggart, house, loading } = this.state;
+
+        if (loading) {
+            return (
+                <React.Fragment>
+                    <div className='random-char-details'>
+                        <Spinner />
+                    </div>
+                </React.Fragment>
+            );
+        }
 
         return (
             <React.Fragment>

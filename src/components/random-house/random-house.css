@@ -1,5 +1,6 @@
 .random-house-wrapper {
     width: 20rem;
+    height: 33rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,6 +9,9 @@
 
     margin-top: 50px;
     margin-right: 0;
+    margin-left: 5rem;
+
+    font-family: 'Exo 2', sans-serif;
 }
 
 .random-house-name {
@@ -20,4 +24,27 @@
 
 img {
     margin: 1rem auto 1rem;
+}
+
+h3 {
+    height: 2rem;
+}
+
+.houseImg {
+    text-align: center;
+    height: 20rem;
+}
+
+.spaceEater {
+    border: 2px solid black;
+    width: 20rem;
+    height: 25rem;
+    border-radius: 10%;
+    margin-left: 5rem;
+
+    font-family: 'Exo 2', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+
 }
