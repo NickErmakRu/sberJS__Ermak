@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e839c56c-bd21-49e0-a595-ca137b6e7401" name="Default Changelist" comment="" />
+    <list default="true" id="e839c56c-bd21-49e0-a595-ca137b6e7401" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -197,7 +199,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../8_sber-react_2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../homework_hp_api" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -249,14 +251,18 @@
       <workItem from="1571916383223" duration="36000" />
       <workItem from="1571916467426" duration="2739000" />
       <workItem from="1571919464857" duration="24000" />
+      <workItem from="1571920237189" duration="33000" />
+      <workItem from="1571920665846" duration="20000" />
+      <workItem from="1571920945463" duration="99000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43104000" />
+    <option name="totallyTimeSpent" value="43256000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14077991" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -271,8 +277,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50627893" side_tool="true" visible="true" weight="0.3101983" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4937211" visible="true" weight="0.3101983" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50826174" side_tool="true" visible="true" weight="0.3101983" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49173826" weight="0.3101983" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
