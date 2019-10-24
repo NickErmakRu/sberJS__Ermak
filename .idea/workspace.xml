@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e839c56c-bd21-49e0-a595-ca137b6e7401" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/character-details/character-details.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/character-details/character-details.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/character-details/character-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/character-details/character-details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/character-details/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/random-house/imgHouse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/random-house/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/random-house/random-house.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/random-house/random-house.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/random-house/random-house.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/random-house/random-house.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/spell-details/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/spell-details/spell-details.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/spell-details/spell-details.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/spell-details/spell-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/spell-details/spell-details.js" afterDir="false" />
-    </list>
+    <list default="true" id="e839c56c-bd21-49e0-a595-ca137b6e7401" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -57,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/random-house/random-house.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
+            <state relative-caret-position="980">
               <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
             </state>
           </provider>
@@ -66,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/character-details/character-details.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-660">
+            <state relative-caret-position="660">
               <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -145,6 +128,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,13 +192,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../8_sber-react_2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -265,11 +248,12 @@
       <workItem from="1571914389726" duration="1905000" />
       <workItem from="1571916383223" duration="36000" />
       <workItem from="1571916467426" duration="2739000" />
+      <workItem from="1571919464857" duration="24000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43080000" />
+    <option name="totallyTimeSpent" value="43104000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -287,8 +271,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.505618" side_tool="true" visible="true" weight="0.3101983" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49438202" visible="true" weight="0.3101983" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50627893" side_tool="true" visible="true" weight="0.3101983" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4937211" visible="true" weight="0.3101983" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -300,17 +284,13 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/app/index.js" />
     <entry file="file://$PROJECT_DIR$/src/components/app/app.css" />
-    <entry file="file://$PROJECT_DIR$/src/components/header/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/header/index.js" />
     <entry file="file://$PROJECT_DIR$/src/components/house-details/index.js" />
     <entry file="file://$PROJECT_DIR$/src/components/house-details/house-details.css" />
     <entry file="file://$PROJECT_DIR$/src/components/item-list/item-list.js" />
     <entry file="file://$PROJECT_DIR$/src/components/item-list/index.js" />
     <entry file="file://$PROJECT_DIR$/src/components/item-list/item-list.css" />
-    <entry file="file://$PROJECT_DIR$/src/components/spell-details/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/spell-details/index.js" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/sectional.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -330,9 +310,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/random-house/imgHouse.css" />
     <entry file="file://$PROJECT_DIR$/src/components/app/app.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/random-house/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/random-house/index.js" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -395,6 +373,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/hapi-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/random-house/imgHouse.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/character-details/index.js" />
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -405,16 +392,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/hapi-service.js">
+    <entry file="file://$PROJECT_DIR$/src/components/random-house/random-house.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="980">
+          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/character-details/character-details.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-660">
+        <state relative-caret-position="660">
           <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -428,23 +415,6 @@
           <caret column="21" selection-start-column="21" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/random-house/random-house.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/random-house/imgHouse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="181" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="181" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/character-details/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/random-house/random-house.js">
       <provider selected="true" editor-type-id="text-editor">
