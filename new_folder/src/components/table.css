@@ -1,0 +1,13 @@
+td {
+    width: 150px;
+    text-align: center;
+}
+
+.boldName {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+table {
+    margin: 50px auto;
+}
