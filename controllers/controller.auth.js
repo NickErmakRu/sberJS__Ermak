@@ -1,16 +1,60 @@
-module.exports.login = function(req, res) {
-    res.status(200).json({
-        login: {
-            email: req.body.email,
-            password: req.body.password
-        }
+const bcrypt = require('bcryptjs')
+const jwt = require('jsonwebtoken')
+const keys = require('../checks/keys')
+
+const user = require('../models/user.model')
+let users = require('../data/users.json')
+
+module.exports.login = async (req, res) => {
+
+    const candidate = await users.find((user) => {
+        return ( (user.email === req.body.email) || (user.name === req.body.name) )
     })
+
+    if (candidate) {
+        const samePassword = bcrypt.compareSync(req.body.password, candidate.password)
+        if (samePassword) {
+
+            const token = jwt.sign({
+                email: candidate.email,
+                userId: candidate.id
+            }, keys.jwt, { expiresIn: 3600 })
+
+            res.status(200).json({ token: `Bearer ${token}` })
+
+        } else {
+            res.status(401).json({ message: 'Неверный пароль' })
+        }
+    } else {
+        res.status(404).json({ message: 'Пользователь не найден' })
+    }
 }
 
-module.exports.register = function(req, res) {
-    res.status(200).json({
-        register: 'from controller'
+
+module.exports.register = async (req, res) => {
+
+    const candidateEmail = await users.find((user) => {
+        return (user.email === req.body.email)
     })
+
+    const candidateName = await users.find((user) => {
+        return (user.name === req.body.name)
+    })
+
+    if (candidateEmail) {
+        res.status(409).json({ message: 'Данный email уже зарегестрирован' })
+    } else if (candidateName) {
+        res.status(409).json({message: 'Данное имя пользователя уже занято'})
+    } else {
+        await user.createUser(req.body)
+            .then(user => res.status(201).json({
+                message: `The user #${user.id} has been created`,
+                content: user
+            }))
+            .catch(err => {
+                res.status(500).json({ message: err.message })
+            })
+    }
 }
 
 

@@ -18,7 +18,7 @@ module.exports.getPostById = async (req, res) => {
         .then(post => res.json(post))
         .catch(err => {
             if (err.status) {
-                res.status(err.status).json({massage: err.message})
+                res.status(err.status).json({message: err.message})
             } else {
                 res.status(500).json({message: err.message})
             }
@@ -64,4 +64,8 @@ module.exports.deletePost = async (req, res) => {
             }
             res.status(500).json({ message: err.message })
         })
+}
+
+module.exports.createPostForm = () => {
+
 }
