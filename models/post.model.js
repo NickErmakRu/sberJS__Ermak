@@ -27,10 +27,13 @@ function getPostById(id) {
     })
 }
 
-function createPost(newPost) {
+function createPost(newPost, imgFiles) {
     return new Promise((resolve, reject) => {
         const id = { id: check.getNewId(posts) }
-        newPost = { ...id, ...newPost }
+        const imgsPost = imgFiles.map((file) => { return file.path })
+        const tags = newPost.tags.split(', ', newPost.tags.length-1)
+        delete newPost.tags
+        newPost = { ...id, imgsPost, tags, ...newPost }
 
         posts.push(newPost)
         check.writeJSONFile(configPath, posts)
