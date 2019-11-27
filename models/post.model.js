@@ -33,10 +33,10 @@ function createPost(newPost) {
         const tags = newPost.tags.split(', ', newPost.tags.length-1)
         delete newPost.tags
 
-        const urlImgCover = '../../../../uploads/'+ newPost.coverImage
-        delete newPost.coverImage
+        // const newPath = '../../../../uploads/'+ newPost.coverImage
+        // delete newPost.coverImage
 
-        newPost = { ...id, tags, urlImgCover, ...newPost }
+        newPost = { ...id, tags,...newPost }
 
         posts.push(newPost)
         check.writeJSONFile(configPath, posts)

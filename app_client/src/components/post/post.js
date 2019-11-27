@@ -10,9 +10,12 @@ export class Post extends React.Component {
     render() {
         const { post } = this.props;
 
+        // console.log(post.newPath)
+        console.log(post.coverImage)
+
         return (
-            <div key={ post.id } className="card">
-                <img className="card-img-top" src={ post.urlImgCover } alt="cardCover" />
+            <div className="card">
+                <img className="card-img-top" src={ post.coverImage } alt="cardCover" />
                     <div className="card-body">
                         <h5 className="card-title">{ post.title }</h5>
                         <div className='postTags'>
