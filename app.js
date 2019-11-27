@@ -7,6 +7,7 @@ const morgan = require('morgan')
 const authRoutes = require('./routes/auth.routes')
 const postsRoutes = require('./routes/posts.routes')
 const usersRoutes = require('./routes/users.routes')
+const uploadRoutes = require('./routes/upload.routes')
 const app = express()
 
 app.use(passport.initialize())
@@ -20,5 +21,6 @@ app.use(cors())
 app.use('/api/auth', authRoutes)
 app.use('/api/posts', postsRoutes)
 app.use('/api/users', usersRoutes)
+app.use('/api/upload', uploadRoutes)
 
 module.exports = app

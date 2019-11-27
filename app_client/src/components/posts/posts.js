@@ -1,14 +1,40 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { connect } from 'react-redux';
+
+import { getPosts } from "../../store/actions/postActions";
+import Spinner from "../spinner/spinner";
+import Post from '../post/post'
+
+import './posts.css'
 
 export class Posts extends React.Component {
+
+    componentDidMount() {
+        this.props.getPosts();
+    }
+
     render() {
+        const { posts } = this.props;
+
+        if (!posts) {
+            return (
+                <Spinner />
+            )
+        }
+
+
         return (
-            <div>
-                Posts
+            <div className='posts-list'>
+                {posts.map(post => {
+                    return <Post key={post.id} post={post}/>
+                })}
             </div>
         )
     }
 }
 
-export default Posts
+const mapStateToProps = state => ({
+    posts: state.postReducer.posts
+})
+
+export default connect(mapStateToProps, { getPosts })(Posts)

@@ -1,15 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
-import { loginUser } from "../../store/actions/authActions";
+import { registerUser } from "../../store/actions/authActions";
 import { clearError } from "../../store/actions/errorActions";
 
-import './login.css';
-
-export class Login extends React.Component {
+export class Register extends React.Component {
 
     state = {
+        name: '',
         email: '',
         password: ''
     }
@@ -33,8 +32,8 @@ export class Login extends React.Component {
 
     onSubmit = e => {
         e.preventDefault();
-
-        this.props.loginUser(this.state);
+        console.log(this.state);
+        this.props.registerUser(this.state);
     }
 
     render() {
@@ -43,18 +42,30 @@ export class Login extends React.Component {
         return (
             <div className='row'>
                 <form className='card p-3 mx-auto col-md-6' onSubmit={ this.onSubmit }>
-                    <h2>Вход</h2>
+                    <h2>Регистрация</h2>
+
+                    <div className='form-group'>
+                        <label htmlFor='name'>Логин</label>
+                        <input
+                            type='text'
+                            className='form-control'
+                            value={this.state.name}
+                            onChange={this.onChange}
+                            name='name'/>
+
+                        {errors.name && (<div className='text-danger'>{errors.name}</div> )}
+                    </div>
 
                     <div className='form-group'>
                         <label htmlFor='email'>Email</label>
                         <input
-                            type='text'
+                            type='email'
                             className='form-control'
                             value={this.state.email}
                             onChange={this.onChange}
                             name='email'/>
 
-                        {errors.name && (<div className='text-danger'>{errors.name}</div> )}
+                        {errors.email && (<div className='text-danger'>{errors.email}</div> )}
                     </div>
 
                     <div className='form-group'>
@@ -65,13 +76,10 @@ export class Login extends React.Component {
                             value={this.state.password}
                             onChange={this.onChange}
                             name='password'/>
-
-                        {errors.password && (<div className='text-danger'>{errors.password}</div> )}
                     </div>
 
-                    <button type='submit' className='btn btn-primary btn-lg'>Войти</button>
-
-                    <Link className='btn btn-info btn-md btn-register' to='/register'>Регистрация</Link>
+                    <button type='submit' className='btn btn-primary btn-lg'>Зарегистрироваться</button>
+                    {errors.message && (<div className='text-danger'>{errors.message}</div> )}
 
                 </form>
             </div>
@@ -84,4 +92,4 @@ const mapStateToProps = state => ({
     errors: state.errorReducer
 })
 
-export default connect(mapStateToProps, { loginUser, clearError })(Login);
+export default connect(mapStateToProps, { registerUser, clearError })(Register);

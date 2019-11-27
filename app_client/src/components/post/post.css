@@ -1,0 +1,28 @@
+.card {
+    width: 14rem;
+    margin: 2rem 2rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tags {
+    background-color: lightslategrey;
+    color: white;
+    width: 70px;
+    height: 25px;
+    text-align: center;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.postTags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

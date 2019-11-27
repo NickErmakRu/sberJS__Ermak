@@ -27,7 +27,7 @@ module.exports.getPostById = async (req, res) => {
 
 module.exports.createPost = async (req, res) => {
 
-    await post.createPost(req.body, req.files)
+    await post.createPost(req.body)
         .then(post => res.status(201).json({
             message: `The post #${post.id} has been created`,
             content: post

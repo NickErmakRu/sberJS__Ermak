@@ -21,7 +21,7 @@ function checkFieldsUser(req, res, next) {
     if  (name && email && password) {
         next()
     } else {
-        res.status(400).json({ message: 'fields are not good' })
+        res.status(400).json({ message: 'Заполните все поля!' })
     }
 }
 

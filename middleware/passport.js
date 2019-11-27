@@ -13,8 +13,8 @@ module.exports = passport => {
     passport.use(
         new JwtStrategy(options, async (payload, done) => {
             try {
-                const user = await users.filter((user) => {
-                    user.id === payload.userId
+                const user = await users.find((user) => {
+                    return (user.id === payload.userId && user.role === 'admin')
                 })
                 if (user) {
                     done(null, user)

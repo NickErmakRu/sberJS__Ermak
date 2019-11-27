@@ -17,16 +17,27 @@ module.exports.login = async (req, res) => {
 
             const token = jwt.sign({
                 email: candidate.email,
+                name: candidate.name,
+                role: candidate.role,
                 userId: candidate.id
             }, keys.jwt, { expiresIn: 3600 })
 
-            res.status(200).json({ token: `Bearer ${token}` })
+            res.cookie("jwt", token);
+
+            res.status(200).json({
+                token: `Bearer ${token}`,
+                user: {
+                    email: candidate.email,
+                    name: candidate.name,
+                    role: candidate.role
+                }
+            })
 
         } else {
-            res.status(401).json({ message: 'Неверный пароль' })
+            res.status(401).json({ password: 'Неверный пароль' })
         }
     } else {
-        res.status(404).json({ message: 'Пользователь не найден' })
+        res.status(404).json({ name: 'Пользователь не найден' })
     }
 }
 
@@ -41,10 +52,14 @@ module.exports.register = async (req, res) => {
         return (user.name === req.body.name)
     })
 
+    if (req.body.name === undefined) {
+        res.status(409).json({ name: 'введите имя' })
+    }
+
     if (candidateEmail) {
-        res.status(409).json({ message: 'Данный email уже зарегестрирован' })
+        res.status(409).json({ email: 'Данный email уже зарегестрирован' })
     } else if (candidateName) {
-        res.status(409).json({message: 'Данное имя пользователя уже занято'})
+        res.status(409).json({ name: 'Данное имя пользователя уже занято'} )
     } else {
         await user.createUser(req.body)
             .then(user => res.status(201).json({
