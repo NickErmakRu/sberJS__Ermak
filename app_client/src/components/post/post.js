@@ -2,23 +2,20 @@ import React from 'react'
 import { Link } from "react-router-dom";
 
 import './post.css'
-import {connect} from "react-redux";
-import { getImg } from "../../store/actions/postActions";
-
 
 export class Post extends React.Component {
 
     shortText = text => text.substr(0, 100) + '...'
 
     render() {
-        const { post, image } = this.props;
+        const { post } = this.props;
 
         return (
             <div className="card">
-                {/*<img className="card-img-top" src={ post.coverImage } alt="cardCover" />*/}
-                <div className='card-mg-top'>{ post.newPath }</div>
+                <img className="card-img-top" src={ post.newPath } alt="cardCover" />
+                {/*<div className='card-mg-top'>{ post.newPath }</div>*/}
                     <div className="card-body">
-                        <h5 className="card-title">{ post.title }</h5>
+                        <h5 className="card-title">«{ post.title }»</h5>
                         <div className='postTags'>
                         { post.tags.map((tag) => {
                             return (
@@ -35,10 +32,4 @@ export class Post extends React.Component {
     }
 }
 
-// export default Post
-
-const mapStateToProps = state => ({
-    image: state.postReducer.image
-})
-
-export default connect(mapStateToProps, { getImg })(Post)
+export default Post

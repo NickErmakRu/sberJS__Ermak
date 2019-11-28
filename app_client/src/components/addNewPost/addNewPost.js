@@ -2,6 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux'
 
 import { addPost } from '../../store/actions/postActions'
+import { UploadConst } from './uploadConst'
+
+import './addNewPost.css'
 
 export class AddNewPost extends React.Component {
     state = {
@@ -23,31 +26,57 @@ export class AddNewPost extends React.Component {
 
     render() {
         const {title, mainText, coverImage, tags, shortText} = this.state;
+        const {user} = this.props;
 
         return (
-            <form onSubmit={this.onSubmit}>
-                <div className='form-group'>
 
-                    <label htmlFor='title'>Заголовок</label>
-                    <input type='text' value={title} onChange={this.onChange} name='title' className='form-control' />
+            <div>
+                { user ? (
+                    <div>
+                        { user.role === 'admin' ? (
+                            <form onSubmit={this.onSubmit}>
+                                <div className='form-group'>
 
-                    <label htmlFor='mainText'>Содержание</label>
-                    <input type='text' value={mainText} onChange={this.onChange} name='mainText' className='form-control' />
+                                    <label htmlFor='title'>Заголовок</label>
+                                    <input type='text' value={title} onChange={this.onChange} name='title'
+                                           className='form-control'/>
 
-                    <label htmlFor='coverImage'>Обложка</label>
-                    <input type='text' value={coverImage} onChange={this.onChange} name='coverImage' className='form-control' />
+                                    <label htmlFor='mainText'>Содержание</label>
+                                    <input type='text' value={mainText} onChange={this.onChange} name='mainText'
+                                           className='form-control'/>
 
-                    <label htmlFor='tags'>Теги</label>
-                    <input type='text' value={tags} onChange={this.onChange} name='tags' className='form-control' />
+                                    <label htmlFor='coverImage'>Обложка</label>
+                                    <input type='text' value={coverImage} onChange={this.onChange} name='coverImage'
+                                           className='form-control'/>
 
-                    <label htmlFor='shortText'>Описание</label>
-                    <input type='text' value={shortText} onChange={this.onChange} name='shortText' className='form-control' />
+                                    <UploadConst/>
 
-                    <button type='submit' className='btn btn-primary'>Опубликовать</button>
-                </div>
-            </form>
+                                    <label htmlFor='tags'>Теги</label>
+                                    <input type='text' value={tags} onChange={this.onChange} name='tags'
+                                           className='form-control'/>
+
+                                    <label htmlFor='shortText'>Описание</label>
+                                    <input type='text' value={shortText} onChange={this.onChange} name='shortText'
+                                           className='form-control'/>
+
+                                    <button type='submit' className='btn btn-primary btnAddPost'>Опубликовать</button>
+                                </div>
+                            </form>
+                        ) : (
+                            <div className='messageToUser'>Зайдите как администратор</div>
+                        )}
+                    </div>
+                    ) : (
+                    <div className='messageToUser'>Зайдите как администратор</div>
+                    )
+                }
+            </div>
         )
     }
 }
 
-export default connect(null, {addPost})(AddNewPost)
+const mapStateToProps = state => ({
+    user: state.authReducer.user
+})
+
+export default connect(mapStateToProps, {addPost})(AddNewPost)

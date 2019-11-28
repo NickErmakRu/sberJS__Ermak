@@ -27,8 +27,8 @@ export class PostPage extends React.Component {
         }
 
         return (
-            <div className='blockWidth'>
-                <h1>{post.title}</h1>
+            <div className='postBody'>
+                <h1>«{post.title}»</h1>
                 <p className='textWidth'>{post.mainText}</p>
 
                 {user ? (

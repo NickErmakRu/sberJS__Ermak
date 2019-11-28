@@ -1,9 +1,8 @@
 import * as actions from '../actions'
 
-const initialState = {
+export const initialState = {
     post: null,
-    posts: null,
-    image: null
+    posts: null
 }
 
 export default ( state = initialState, action ) => {
@@ -13,12 +12,6 @@ export default ( state = initialState, action ) => {
 
         case actions.GET_POST:
             return { ...state, post: action.post };
-
-        // case actions.GET_IMG:
-        //     return { ...state, image: action.image}
-
-        case actions.GET_IMG:
-            return { ...state, image: action.image};
 
         case actions.ADD_POST:
             return { ...state, posts: null };

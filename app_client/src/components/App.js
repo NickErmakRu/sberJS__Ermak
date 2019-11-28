@@ -5,9 +5,12 @@ import NavBar from './navBar/navBar.js';
 import Login from './login/login';
 import Logout from './logout/logout';
 import Register from './register/register';
-import Posts from './posts/posts';
-import RewPosts from './posts/reviews';
-import NewsPosts from './posts/news';
+import HomePage from './pages/mainPage';
+import MoviePage from './pages/moviesPage';
+import TvSeriesPage from './pages/tvSeriesPage';
+import NewsPage from './pages/newsPage';
+import ReviewsPage from './pages/reviewsPage';
+
 import PostPage from './postPage/postPage';
 import AddNewPost from './addNewPost/addNewPost';
 import UpdatePost from './updatePost/updatePost';
@@ -24,9 +27,12 @@ export class App extends React.Component {
                 <NavBar />
                 <div className='container'>
                     <Switch>
-                        <Route exact path='/' component={ Posts } />
-                        <Route exact path='/reviews' component={ RewPosts } />
-                        <Route exact path='/news' component={ NewsPosts } />
+                        <Route exact path='/' component={ HomePage } />
+                        <Route exact path='/movies' component={ MoviePage } />
+                        <Route exact path='/reviews' component={ReviewsPage } />
+                        <Route exact path='/news' component={ NewsPage } />
+                        <Route exact path='/tv-series' component={ TvSeriesPage } />
+
                         <Route exact path='/post/:id' component={ PostPage } />
                         <Route exact path='/new_post' component={ AddNewPost } />
                         <Route exact path='/update/:id' component={ UpdatePost } />

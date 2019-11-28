@@ -27,16 +27,18 @@ function getPostById(id) {
     })
 }
 
-function createPost(newPost, postFiles) {
+function createPost(newPost) {
     return new Promise((resolve, reject) => {
         const id = { id: check.getNewId(posts) }
         const tags = newPost.tags.split(', ', newPost.tags.length-1)
         delete newPost.tags
 
-        const newPath = newPost.coverImage
+        const newPath = '/static/' + newPost.coverImage
         delete newPost.coverImage
 
-        newPost = { ...id, tags, newPath, ...newPost }
+        let comments = [];
+
+        newPost = { ...id, tags, newPath, comments, ...newPost }
 
         posts.unshift(newPost)
         check.writeJSONFile(configPath, posts)
@@ -54,7 +56,10 @@ function updatePost(id, newPost) {
                 const tags = newPost.tags.split(', ', newPost.tags.length-1)
                 delete newPost.tags
 
-                posts[index] = { ...id, tags, ...newPost }
+                const newPath = '/static/' + newPost.newPath
+                delete newPost.newPath
+
+                posts[index] = { ...id, tags, newPath,...newPost }
                 check.writeJSONFile(configPath, posts)
                 resolve(posts[index])
             })

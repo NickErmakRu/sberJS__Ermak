@@ -18,26 +18,29 @@ class Posts extends React.Component {
 
         if (!posts) {
             return (
-                <Spinner className='testClass' />
+                <Spinner />
             )
         }
 
         return (
             <div className='posts-list'>
-                {posts.map(post => {
-                    return <Post key={post.id} post={post}/>
+                { posts.map(post => {
+                    if (post.tags.includes('сериалы')) {
+                        return <Post key={post.id} post={post}/>
+                    }
                 })}
             </div>
         )
     }
 }
 
-const mapStateToProps = state => ({
+const mapStateToPropsTvSeries = state => ({
     posts: state.postReducer.posts
 })
 
-const AllPosts = connect(mapStateToProps, { getPosts })(Posts)
+const TvSeriesPosts = connect(mapStateToPropsTvSeries, { getPosts })(Posts)
+
 
 export {
-    AllPosts
+    TvSeriesPosts
 }

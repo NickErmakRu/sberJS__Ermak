@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-// import { Link } from "react-router-dom";
 
 import { registerUser } from "../../store/actions/authActions";
 import { clearError } from "../../store/actions/errorActions";
@@ -10,18 +9,19 @@ export class Register extends React.Component {
     state = {
         name: '',
         email: '',
-        password: ''
+        password: '',
+        role: null
     }
 
     componentDidUpdate() {
-        if (this.props.user) {
+        if (this.props.user && this.props.user.role !== 'admin') {
             this.props.history.push('/');
         }
     }
 
     componentDidMount() {
         this.props.clearError();
-        if (this.props.user) {
+        if (this.props.user && this.props.user.role !== 'admin') {
             this.props.history.push('/');
         }
     }
@@ -32,12 +32,11 @@ export class Register extends React.Component {
 
     onSubmit = e => {
         e.preventDefault();
-        console.log(this.state);
         this.props.registerUser(this.state);
     }
 
     render() {
-        const { errors } = this.props;
+        const { errors, user } = this.props;
 
         return (
             <div className='row'>
@@ -77,6 +76,23 @@ export class Register extends React.Component {
                             onChange={this.onChange}
                             name='password'/>
                     </div>
+
+                    { user ? (
+                        <div>
+                            { user.role === 'admin' ? (
+                                <div className='form-group'>
+                                    <label htmlFor='password'>Роль в системе</label>
+                                    <input
+                                        type='text'
+                                        className='form-control'
+                                        value={this.state.role}
+                                        onChange={this.onChange}
+                                        name='role'/>
+                                </div>
+                            ) : ( null )}
+                        </div>
+                    ) : ( null )}
+
 
                     <button type='submit' className='btn btn-primary btn-lg'>Зарегистрироваться</button>
                     {errors.message && (<div className='text-danger'>{errors.message}</div> )}

@@ -9,7 +9,7 @@ export const loginUser = loginData => async dispatch => {
         axios.defaults.headers.common = { 'Authorization': res.data.token }
         // 'Authorization': `Bearer ${getJwtCookie()}`
         //реализовать получение куки => document.cookie
-        console.log(js_cookie)
+        // console.log(js_cookie)
         dispatch({ type: actions.SET_USER, user: res.data.user });
     } catch(e) {
         dispatch({ type: actions.ERROR, error: e.response.data })

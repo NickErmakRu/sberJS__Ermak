@@ -5,6 +5,8 @@ import { updatePost, getPost } from '../../store/actions/postActions'
 
 import Spinner from '../spinner/spinner'
 
+import './updatePost.css'
+
 export class UpdatePost extends React.Component {
 
     constructor(props) {
@@ -13,7 +15,7 @@ export class UpdatePost extends React.Component {
         this.titleInput = React.createRef();
         this.shortTextInput = React.createRef();
         this.mainTextInput = React.createRef();
-        this.coverImageInput = React.createRef();
+        this.newPathInput = React.createRef();
         this.tagsInput = React.createRef();
     }
 
@@ -29,46 +31,66 @@ export class UpdatePost extends React.Component {
             title: this.titleInput.current.value,
             shortText: this.shortTextInput.current.value,
             mainText: this.mainTextInput.current.value,
-            coverImage: this.coverImageInput.current.value,
-            tags: this.tagsInput.current.value,
+            newPath: this.newPathInput.current.value,
+            tags: this.tagsInput.current.value
         }, this.props.history);
     }
 
     render() {
-        const {post} = this.props;
+        const {post, user} = this.props;
 
         if (!post) {
             return <Spinner />
         }
 
         return (
-            <form onSubmit={this.onSubmit}>
-                <div className='form-group'>
+            <div>
+                { user ? (
+                    <div>
+                        { user.role === 'admin' ? (
+                            <form onSubmit={this.onSubmit}>
+                                <div className='form-group'>
 
-                    <label htmlFor='title'>Заголовок</label>
-                    <input ref={this.titleInput} type='text' defaultValue={post.title} name='title' className='form-control' />
+                                    <label htmlFor='title'>Заголовок</label>
+                                    <input ref={this.titleInput} type='text' defaultValue={post.title} name='title'
+                                           className='form-control'/>
 
-                    <label htmlFor='mainText'>Содержание</label>
-                    <input ref={this.mainTextInput} type='text' defaultValue={post.mainText} name='mainText' className='form-control' />
+                                    <label htmlFor='mainText'>Содержание</label>
+                                    <input ref={this.mainTextInput} type='text' defaultValue={post.mainText} name='mainText'
+                                           className='form-control'/>
 
-                    <label htmlFor='coverImage'>Обложка</label>
-                    <input ref={this.coverImageInput} type='text' defaultValue={post.coverImage} name='coverImage' className='form-control' />
+                                    <label htmlFor='newPath'>Обложка</label>
+                                    <input ref={this.newPathInput} type='text'
+                                           defaultValue={post.newPath.substr(8, post.newPath.length - 1)} name='newPath'
+                                           className='form-control'/>
 
-                    <label htmlFor='tags'>Теги</label>
-                    <input ref={this.tagsInput} type='text' defaultValue={post.tags} name='tags' className='form-control' />
+                                    <label htmlFor='tags'>Теги</label>
+                                    <input ref={this.tagsInput} type='text' defaultValue={post.tags} name='tags'
+                                           className='form-control'/>
 
-                    <label htmlFor='shortText'>Описание</label>
-                    <input ref={this.shortTextInput} type='text' defaultValue={post.shortText} name='shortText' className='form-control' />
+                                    <label htmlFor='shortText'>Описание</label>
+                                    <input ref={this.shortTextInput} type='text' defaultValue={post.shortText} name='shortText'
+                                           className='form-control'/>
 
-                    <button type='submit' className='btn btn-primary'>Сохранить</button>
-                </div>
-            </form>
+                                    <button type='submit' className='btn btn-primary btnSavePost'>Сохранить</button>
+                                </div>
+                            </form>
+                        ) : (
+                            <div className='messageToUser'>Зайдите как администратор</div>
+                        )}
+                    </div>
+                    ) : (
+                    <div className='messageToUser'>Зайдите как администратор</div>
+                    )
+                }
+            </div>
         )
     }
 }
 
 const mapStateToProps = state => ({
-    post: state.postReducer.post
+    post: state.postReducer.post,
+    user: state.authReducer.user
 })
 
 export default connect(mapStateToProps, { updatePost, getPost })(UpdatePost)

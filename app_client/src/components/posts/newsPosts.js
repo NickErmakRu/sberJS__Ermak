@@ -7,7 +7,7 @@ import Post from '../post/post'
 
 import './posts.css'
 
-export class NewsPosts extends React.Component {
+class Posts extends React.Component {
 
     componentDidMount() {
         this.props.getPosts();
@@ -22,10 +22,9 @@ export class NewsPosts extends React.Component {
             )
         }
 
-
         return (
             <div className='posts-list'>
-                {posts.map(post => {
+                { posts.map(post => {
                     if (post.tags.includes('новости')) {
                         return <Post key={post.id} post={post}/>
                     }
@@ -35,8 +34,13 @@ export class NewsPosts extends React.Component {
     }
 }
 
-const mapStateToProps = state => ({
+const mapStateToPropsNews = state => ({
     posts: state.postReducer.posts
 })
 
-export default connect(mapStateToProps, { getPosts })(NewsPosts)
+const NewsPosts = connect(mapStateToPropsNews, { getPosts })(Posts)
+
+
+export {
+    NewsPosts
+}

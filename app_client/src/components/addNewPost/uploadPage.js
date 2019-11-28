@@ -1,15 +1,13 @@
 import React from 'react';
-import {connect} from "react-redux";
 
-
-import { getImg } from "../../store/actions/postActions";
+import './uploadPage.css'
 
 export class Upload extends React.Component {
 
-    onSubmit = async (e) => {
+    onSubmitImg = async (e) => {
         e.preventDefault();
 
-        let fileValue = document.getElementsByTagName('input')[0].files[0];
+        let fileValue = document.getElementById('uploader').files[0];
 
         let formData = new FormData();
         formData.append('image', fileValue)
@@ -28,22 +26,15 @@ export class Upload extends React.Component {
         return (
             <div>
 
-                <form id='uploadForm' onSubmit={this.onSubmit}>
-                        Картинка: <input type="file" name="picture" accept="image/*" />
+                <form id='uploadForm' onSubmit={this.onSubmitImg}>
+                        Картинка: <input id='uploader' type="file" name="picture" accept="image/*" />
                         <input type="submit" />
                 </form>
 
                 <div id='addressImg'></div>
-                <div id='seeImg'></div>
             </div>
         )
     }
 }
 
-// export default Upload;
-
-const mapStateToProps = state => ({
-    img: state.postReducer.img
-})
-
-export default connect(mapStateToProps, { getImg })(Upload)
+export default Upload;

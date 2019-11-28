@@ -4,8 +4,34 @@
     <list default="true" id="da977c46-8852-4df6-a42b-9df8a6ea53dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/addNewPost/addNewPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/addNewPost/addNewPost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/addNewPost/uploadPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/addNewPost/uploadPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/navBar/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/navBar/navBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/navBar/navBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/navBar/navBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/post/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/post/post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/postPage/postPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/postPage/postPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/postPage/postPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/postPage/postPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/posts/news.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/posts/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/posts/posts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/posts/reviews.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/register/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/register/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/updatePost/updatePost.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/updatePost/updatePost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/store/actions/authActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/store/actions/authActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_client/src/store/actions/postActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/store/actions/postActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/store/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_client/src/store/reducers/postReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/store/reducers/postReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/images.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/posts.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/posts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/users.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/post.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/post.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/posts.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/posts.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/upload.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/upload.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.routes.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,44 +47,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/post.model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="-360">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/upload.model.js">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/checks/check.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/user.model.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/controller.posts.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+            <state relative-caret-position="269">
+              <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -66,8 +65,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/posts.routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+            <state relative-caret-position="80">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checks/check.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/user.model.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/middleware/passport.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/upload.routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/upload.model.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -89,36 +133,35 @@
       <list>
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/cheks/check.js" />
-        <option value="$PROJECT_DIR$/routes/auth.routes.js" />
         <option value="$PROJECT_DIR$/checks/keys.js" />
-        <option value="$PROJECT_DIR$/routes/users.routes.js" />
         <option value="$PROJECT_DIR$/controllers/controller.users.js" />
         <option value="$PROJECT_DIR$/utils/errorHandler.js" />
         <option value="$PROJECT_DIR$/middleware/upload.js" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/controllers/controller.auth.js" />
         <option value="$PROJECT_DIR$/checks/middlewares.js" />
-        <option value="$PROJECT_DIR$/middleware/passport.js" />
-        <option value="$PROJECT_DIR$/routes/upload.routes.js" />
         <option value="$PROJECT_DIR$/models/upload.model.js" />
         <option value="$PROJECT_DIR$/controllers/controller.upload.js" />
-        <option value="$PROJECT_DIR$/data/posts.json" />
-        <option value="$PROJECT_DIR$/routes/posts.routes.js" />
         <option value="$PROJECT_DIR$/controllers/controller.posts.js" />
-        <option value="$PROJECT_DIR$/data/users.json" />
-        <option value="$PROJECT_DIR$/models/user.model.js" />
         <option value="$PROJECT_DIR$/checks/check.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/data/images.json" />
+        <option value="$PROJECT_DIR$/data/posts.json" />
         <option value="$PROJECT_DIR$/models/post.model.js" />
+        <option value="$PROJECT_DIR$/middleware/passport.js" />
+        <option value="$PROJECT_DIR$/routes/auth.routes.js" />
+        <option value="$PROJECT_DIR$/routes/users.routes.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/routes/posts.routes.js" />
+        <option value="$PROJECT_DIR$/routes/upload.routes.js" />
+        <option value="$PROJECT_DIR$/models/user.model.js" />
+        <option value="$PROJECT_DIR$/data/users.json" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="520" />
-    <option name="y" value="120" />
-    <option name="width" value="1400" />
-    <option name="height" value="915" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -137,7 +180,27 @@
             <path>
               <item name="cinemalism-blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="cinemalism-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="checks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cinemalism-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cinemalism-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cinemalism-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cinemalism-blog" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cinemalism-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cinemalism-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="middleware" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cinemalism-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cinemalism-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cinemalism-blog" type="b2602c69:ProjectViewProjectNode" />
@@ -191,18 +254,18 @@
       <workItem from="1574601670998" duration="39000" />
       <workItem from="1574636919514" duration="120000" />
       <workItem from="1574667023039" duration="13000" />
-      <workItem from="1574667741407" duration="62989000" />
+      <workItem from="1574667741407" duration="83429000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97172000" />
+    <option name="totallyTimeSpent" value="117612000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2881692" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2881692" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -214,7 +277,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -228,13 +291,6 @@
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-60" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/checks/keys.js">
@@ -262,69 +318,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users.routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/middleware/passport.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="16" column="80" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/controller.auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/auth.routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/controller.upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="58" lean-forward="true" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/upload.routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/posts.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1154" selection-start-column="1154" selection-end-column="1154" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/users.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/checks/middlewares.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -339,6 +332,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/auth.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/users.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/controller.posts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/controller.auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/controller.upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="58" lean-forward="true" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/upload.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/images.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -346,52 +395,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/posts.routes.js">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        <state relative-caret-position="269">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/upload.model.js">
+    <entry file="file://$PROJECT_DIR$/middleware/passport.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/controller.posts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/user.model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+        <state relative-caret-position="260">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/post.model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="-360">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/routes/posts.routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        <state relative-caret-position="80">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/upload.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/checks/check.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        <state relative-caret-position="180">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/users.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/posts.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1504" selection-start-column="1504" selection-end-column="1504" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/user.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
         </state>
       </provider>
     </entry>
