@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from "react-router-dom";
 
 import { getPost, deletePost } from "../../store/actions/postActions";
 import Spinner from "../spinner/spinner";
@@ -33,7 +34,7 @@ export class PostPage extends React.Component {
                 {user ? (
                     <div>
                         <button onClick={this.onClick} className='btn btn-danger mr-2'>Удалить</button>
-                        <button className='btn btn-warning mr-2'>Редактировать</button>
+                        <Link className='btn btn-warning mr-2' to={`/update/${post.id}`}>Редактировать</Link>
                     </div>
                 ) : null }
 

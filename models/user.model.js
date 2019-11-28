@@ -27,8 +27,7 @@ function createUser(newUser) {
         const salt = bcrypt.genSaltSync(10)
         const password = bcrypt.hashSync(newUser.password, salt)
 
-        // { newUser.role ? newUser.role : newUser.role = 'user'}
-
+        newUser.role ? newUser.role : newUser.role = 'user'
         newUser.password = password
 
         newUser = { ...id, ...newUser }

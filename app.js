@@ -17,6 +17,7 @@ app.use(morgan('dev'))
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use(cors())
+app.use('/static', express.static('uploads'));
 
 app.use('/api/auth', authRoutes)
 app.use('/api/posts', postsRoutes)

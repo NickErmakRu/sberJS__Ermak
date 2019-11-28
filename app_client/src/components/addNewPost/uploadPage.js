@@ -1,5 +1,8 @@
 import React from 'react';
-import axios from "axios";
+import {connect} from "react-redux";
+
+
+import { getImg } from "../../store/actions/postActions";
 
 export class Upload extends React.Component {
 
@@ -37,4 +40,10 @@ export class Upload extends React.Component {
     }
 }
 
-export default Upload;
+// export default Upload;
+
+const mapStateToProps = state => ({
+    img: state.postReducer.img
+})
+
+export default connect(mapStateToProps, { getImg })(Upload)

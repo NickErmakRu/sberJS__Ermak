@@ -40,7 +40,7 @@ export class AddNewPost extends React.Component {
                     <label htmlFor='tags'>Теги</label>
                     <input type='text' value={tags} onChange={this.onChange} name='tags' className='form-control' />
 
-                    <label htmlFor='title'>Описание</label>
+                    <label htmlFor='shortText'>Описание</label>
                     <input type='text' value={shortText} onChange={this.onChange} name='shortText' className='form-control' />
 
                     <button type='submit' className='btn btn-primary'>Опубликовать</button>

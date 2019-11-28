@@ -7,15 +7,18 @@ import './navBar.css';
 export class NavBar extends React.Component {
 
     render() {
+
         const {user} = this.props;
 
         if (user) {
-            if (user.role === 'admin') {
+            if(user.role === 'admin') {
                 return (
                     <div>
                         <header className='blog-header row'>
                             <Link className='logo text-dark' to='/'>cinemalism</Link>
                             <div className='blog-pages'>
+                                {/*<input className="form-control mr-sm-2" type="search" placeholder="Search"*/}
+                                {/*       aria-label="Search" onChange={this.onChange}/>*/}
                                 <Link className='text-dark' to='/reviews'>рецензии</Link>
                                 <Link className='text-dark' to='/news'>новости</Link>
                                 <div></div>
@@ -25,7 +28,7 @@ export class NavBar extends React.Component {
                         </header>
                         <header className='adminHeader'>
                             <Link className='btn btn-primary btn-sm newPost' to='/new_post'>добавить статью</Link>
-                            <Link className='btn btn-primary btn-sm newPost' to='/new_admin'>зарегать нового админа</Link>
+                            <Link className='btn btn-primary btn-sm newPost' to='/new_admin'>зарегать админа</Link>
                         </header>
                     </div>
                 )
@@ -48,20 +51,19 @@ export class NavBar extends React.Component {
         } else {
             return (
                 <div>
-                    <header className='blog-header row'>
-                        <Link className='logo text-dark' to='/'>cinemalism</Link>
+                <header className='blog-header row'>
+                    <Link className='logo text-dark' to='/'>cinemalism</Link>
                         <div className='blog-pages'>
                             <Link className='text-dark' to='/reviews'>рецензии</Link>
                             <Link className='text-dark' to='/news'>новости</Link>
                             <Link className='btn btn-success btn-sm' to='/login'>Вход</Link>
                         </div>
-                    </header>
+                </header>
                 </div>
-            );
+            )
         }
     }
 }
-
 
 const mapStateToProps = state => ({
     user: state.authReducer.user

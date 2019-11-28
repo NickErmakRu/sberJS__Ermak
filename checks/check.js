@@ -15,7 +15,7 @@ function mustBeInArray(array, id) {
 
 const getNewId = (array) => {
     if (array.length > 0) {
-        return array[array.length -1].id + 1
+        return array[0].id + 1
     } else {
         return 1
     }
