@@ -12,10 +12,16 @@ export const getPost = (id) => async dispatch => {
     dispatch({ type: actions.GET_POST, post: res.data})
 }
 
+// export const getImg = (path) => async dispatch => {
+//     const res = await axios.get(`/static/${path}`);
+//     dispatch({ type: actions.GET_IMG, image: res.data})
+// }
+
 export const getImg = (path) => async dispatch => {
     const res = await axios.get(`/static/${path}`);
     dispatch({ type: actions.GET_IMG, image: res.data})
 }
+
 
 export const addPost = (post, history) => async dispatch => {
     const res = await axios.post('/api/posts', post);

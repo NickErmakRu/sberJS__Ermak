@@ -3,29 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="434aa6fa-6cfd-4016-bf4b-a4245ab95fe3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/addNewPost/addNewPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/addNewPost/addNewPost.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/addNewPost/uploadPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/addNewPost/uploadPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navBar/navBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navBar/navBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/post/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post/post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/postPage/postPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/postPage/postPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/posts/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/posts/posts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actions/postActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/postActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/postReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/postReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../checks/check.js" beforeDir="false" afterPath="$PROJECT_DIR$/../checks/check.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../controllers/controller.posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/../controllers/controller.posts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/images.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/images.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/posts.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/posts.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/../data/users.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../models/post.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/../models/post.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../models/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/../models/user.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uploads/24November2019-155359_507-wpx3KvaxaBA.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uploads/24November2019-155359_513-XqqqfC8083s.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uploads/27November2019-151545_460-wpx3KvaxaBA.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uploads/27November2019-152130_857-wpx3KvaxaBA.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,14 +30,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/post/post.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+            <state relative-caret-position="280">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/store/actions/postActions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/store/reducers/postReducer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -156,14 +157,14 @@
         <option value="$PROJECT_DIR$/src/components/App.js" />
         <option value="$PROJECT_DIR$/src/store/actions/index.js" />
         <option value="$PROJECT_DIR$/src/components/addNewPost/uploadPage.js" />
-        <option value="$PROJECT_DIR$/src/store/actions/postActions.js" />
-        <option value="$PROJECT_DIR$/src/store/reducers/postReducer.js" />
         <option value="$PROJECT_DIR$/src/components/posts/posts.js" />
         <option value="$PROJECT_DIR$/src/components/post/post.js" />
+        <option value="$PROJECT_DIR$/src/store/actions/postActions.js" />
+        <option value="$PROJECT_DIR$/src/store/reducers/postReducer.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="520" />
     <option name="y" value="120" />
     <option name="width" value="1400" />
@@ -341,12 +342,12 @@
       <updated>1574601304876</updated>
       <workItem from="1574601306534" duration="362000" />
       <workItem from="1574601711034" duration="8355000" />
-      <workItem from="1574667038170" duration="90545000" />
+      <workItem from="1574667038170" duration="90940000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99262000" />
+    <option name="totallyTimeSpent" value="99657000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -570,13 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/reducers/postReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -611,16 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
           <caret line="38" column="65" lean-forward="true" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actions/postActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="55" lean-forward="true" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -678,11 +662,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/post/post.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+        <state relative-caret-position="280">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actions/postActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/reducers/postReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
         </state>
       </provider>
     </entry>
