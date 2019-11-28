@@ -4,34 +4,6 @@
     <list default="true" id="da977c46-8852-4df6-a42b-9df8a6ea53dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_client/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_client/src/components/addNewPost/addNewPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/addNewPost/addNewPost.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_client/src/components/addNewPost/uploadPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/addNewPost/uploadPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_client/src/components/navBar/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/navBar/navBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_client/src/components/navBar/navBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/navBar/navBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_client/src/components/post/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/post/post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_client/src/components/postPage/postPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/postPage/postPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_client/src/components/postPage/postPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/postPage/postPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_client/src/components/posts/news.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_client/src/components/posts/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/posts/posts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_client/src/components/posts/reviews.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_client/src/components/register/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/register/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_client/src/components/updatePost/updatePost.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/updatePost/updatePost.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_client/src/store/actions/authActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/store/actions/authActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_client/src/store/actions/postActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/store/actions/postActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_client/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_client/src/store/reducers/postReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/store/reducers/postReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/images.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/posts.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/posts.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/users.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/post.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/post.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/posts.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/posts.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/upload.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/upload.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/users.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.routes.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -84,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/models/user.model.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
-              <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+              <caret line="34" selection-start-line="34" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -254,18 +226,17 @@
       <workItem from="1574601670998" duration="39000" />
       <workItem from="1574636919514" duration="120000" />
       <workItem from="1574667023039" duration="13000" />
-      <workItem from="1574667741407" duration="83429000" />
+      <workItem from="1574667741407" duration="83843000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117612000" />
+    <option name="totallyTimeSpent" value="118026000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2881692" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2881692" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -277,7 +248,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -454,7 +425,7 @@
     <entry file="file://$PROJECT_DIR$/models/user.model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
-          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+          <caret line="34" selection-start-line="34" selection-end-line="35" />
         </state>
       </provider>
     </entry>
