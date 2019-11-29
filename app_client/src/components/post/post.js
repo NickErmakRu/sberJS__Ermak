@@ -12,7 +12,7 @@ export class Post extends React.Component {
 
         return (
             <div className="card">
-                <img className="card-img-top" src={ post.newPath } alt="cardCover" />
+                <img className="card-img-top cardCover" src={ post.newPath } alt="cardCover" />
                 {/*<div className='card-mg-top'>{ post.newPath }</div>*/}
                     <div className="card-body">
                         <h5 className="card-title">«{ post.title }»</h5>

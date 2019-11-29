@@ -11,12 +11,13 @@ export class AddNewPost extends React.Component {
         title: '',
         mainText: '',
         coverImage: '',
+        bodyImage: '',
         tags: '',
         shortText: ''
     }
 
     onChange = e => {
-        this.setState({[e.target.name] : e.target.value})
+            this.setState({[e.target.name] : e.target.value})
     }
 
     onSubmit = e => {
@@ -25,7 +26,7 @@ export class AddNewPost extends React.Component {
     }
 
     render() {
-        const {title, mainText, coverImage, tags, shortText} = this.state;
+        const {title, mainText, coverImage, bodyImage, tags, shortText} = this.state;
         const {user} = this.props;
 
         return (
@@ -41,12 +42,22 @@ export class AddNewPost extends React.Component {
                                     <input type='text' value={title} onChange={this.onChange} name='title'
                                            className='form-control'/>
 
-                                    <label htmlFor='mainText'>Содержание</label>
-                                    <input type='text' value={mainText} onChange={this.onChange} name='mainText'
-                                           className='form-control'/>
+                                    {/*<label htmlFor='mainText'>Содержание</label>*/}
+                                    {/*<input type='text' value={mainText} onChange={this.onChange} name='mainText'*/}
+                                    {/*       className='form-control'/>*/}
+
+                                    <div className="form-group">
+                                        <label htmlFor="mainText">Example textarea</label>
+                                        <textarea value={mainText} onChange={this.onChange} name='mainText' className="form-control" id="exampleFormControlTextarea1"
+                                                  rows="3" />
+                                    </div>
 
                                     <label htmlFor='coverImage'>Обложка</label>
                                     <input type='text' value={coverImage} onChange={this.onChange} name='coverImage'
+                                           className='form-control'/>
+
+                                    <label htmlFor='coverImage'>Изображение для статьи</label>
+                                    <input type='text' value={bodyImage} onChange={this.onChange} name='bodyImage'
                                            className='form-control'/>
 
                                     <UploadConst/>

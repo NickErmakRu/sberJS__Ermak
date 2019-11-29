@@ -2,3 +2,9 @@
     width: 60%;
     margin: auto;
 }
+
+@media (max-width: 600px) {
+    .main-div {
+        width: 90%;
+    }
+}

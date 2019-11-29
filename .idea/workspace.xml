@@ -3,7 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="da977c46-8852-4df6-a42b-9df8a6ea53dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/addNewPost/addNewPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/addNewPost/addNewPost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/navBar/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/navBar/navBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/navBar/navBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/navBar/navBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/post/post.css" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/post/post.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/post/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/post/post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/postPage/postPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/postPage/postPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/postPage/postPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/postPage/postPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/posts/posts.css" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/posts/posts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/updatePost/updatePost.css" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/updatePost/updatePost.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_client/src/components/updatePost/updatePost.js" beforeDir="false" afterPath="$PROJECT_DIR$/app_client/src/components/updatePost/updatePost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/images.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/posts.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/posts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/post.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/post.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,19 +34,19 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/post.model.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-360">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="269">
               <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -52,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/user.model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="34" selection-start-line="34" selection-end-line="35" />
+            <state relative-caret-position="360">
+              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -103,7 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/cheks/check.js" />
         <option value="$PROJECT_DIR$/checks/keys.js" />
         <option value="$PROJECT_DIR$/controllers/controller.users.js" />
@@ -118,7 +134,6 @@
         <option value="$PROJECT_DIR$/checks/check.js" />
         <option value="$PROJECT_DIR$/data/images.json" />
         <option value="$PROJECT_DIR$/data/posts.json" />
-        <option value="$PROJECT_DIR$/models/post.model.js" />
         <option value="$PROJECT_DIR$/middleware/passport.js" />
         <option value="$PROJECT_DIR$/routes/auth.routes.js" />
         <option value="$PROJECT_DIR$/routes/users.routes.js" />
@@ -127,13 +142,16 @@
         <option value="$PROJECT_DIR$/routes/upload.routes.js" />
         <option value="$PROJECT_DIR$/models/user.model.js" />
         <option value="$PROJECT_DIR$/data/users.json" />
+        <option value="$PROJECT_DIR$/models/post.model.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="978" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -226,12 +244,12 @@
       <workItem from="1574601670998" duration="39000" />
       <workItem from="1574636919514" duration="120000" />
       <workItem from="1574667023039" duration="13000" />
-      <workItem from="1574667741407" duration="83843000" />
+      <workItem from="1574667741407" duration="90407000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118026000" />
+    <option name="totallyTimeSpent" value="124590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -303,13 +321,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -366,24 +377,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/middleware/passport.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/post.model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -415,17 +412,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/posts.json">
+    <entry file="file://$PROJECT_DIR$/models/user.model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1504" selection-start-column="1504" selection-end-column="1504" />
+        <state relative-caret-position="360">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/user.model.js">
+    <entry file="file://$PROJECT_DIR$/data/posts.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="34" selection-start-line="34" selection-end-line="35" />
+        <state>
+          <caret column="2994" selection-start-column="2994" selection-end-column="2994" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/post.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1340">
+          <caret line="67" column="68" selection-start-line="67" selection-start-column="68" selection-end-line="67" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
         </state>
       </provider>
     </entry>

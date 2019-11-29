@@ -36,9 +36,12 @@ function createPost(newPost) {
         const newPath = '/static/' + newPost.coverImage
         delete newPost.coverImage
 
+        const newBodyPath = '/static/' + newPost.bodyImage
+        delete newPost.bodyImage
+
         let comments = [];
 
-        newPost = { ...id, tags, newPath, comments, ...newPost }
+        newPost = { ...id, tags, newPath, newBodyPath, comments, ...newPost }
 
         posts.unshift(newPost)
         check.writeJSONFile(configPath, posts)
@@ -59,7 +62,10 @@ function updatePost(id, newPost) {
                 const newPath = '/static/' + newPost.newPath
                 delete newPost.newPath
 
-                posts[index] = { ...id, tags, newPath,...newPost }
+                const newBodyPath = '/static/' + newPost.newBodyPath
+                delete newPost.newBodyPath
+
+                posts[index] = { ...id, tags, newPath, newBodyPath, ...newPost }
                 check.writeJSONFile(configPath, posts)
                 resolve(posts[index])
             })

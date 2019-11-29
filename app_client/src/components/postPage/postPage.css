@@ -1,3 +1,19 @@
 .postBody {
     margin-top: 3rem;
+    min-width: 300px;
+}
+
+.bodyImageDiv {
+    width: 100%;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.bodyImage {
+    height: 600px;
+    max-width: 1200px;
+}
+
+.adminBtns {
+    margin: 1rem auto;
 }

@@ -11,19 +11,19 @@ export class NavBar extends React.Component {
         const {user} = this.props;
 
         return (
-            <div>
+            <div className='divHeader'>
                 { user ? (
                     <div>
                     <header className='blog-header row'>
                         <Link className='logo text-dark' to='/'>cinemalism</Link>
                         <div className='blog-pages'>
-                            <Link className='text-dark' to='/movies'>кино</Link>
-                            <Link className='text-dark' to='/tv-series'>сериалы</Link>
-                            <Link className='text-dark' to='/reviews'>рецензии</Link>
-                            <Link className='text-dark' to='/news'>новости</Link>
-                            <div className='vertLine'></div>
-                            <Link className='text-dark userName' to='/'>{user.name || user.user.name}</Link>
-                            <Link className='btn btn-warning btn-sm' to='/logout'>Выход</Link>
+                            <Link className='text-dark barLink' to='/movies'>кино</Link>
+                            <Link className='text-dark barLink' to='/tv-series'>сериалы</Link>
+                            <Link className='text-dark barLink' to='/reviews'>рецензии</Link>
+                            <Link className='text-dark barLink' to='/news'>новости</Link>
+                            <div className='vertLine  barLink'></div>
+                            <Link className='text-dark userName  barLink' to='/'>{user.name || user.user.name}</Link>
+                            <Link className='btn btn-warning btn-sm  barLink' to='/logout'>Выход</Link>
                         </div>
                     </header>
                         <div className='subLogo'>good films make your life better</div>

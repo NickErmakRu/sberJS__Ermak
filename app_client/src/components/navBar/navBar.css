@@ -1,3 +1,7 @@
+.divHeader {
+    min-width: 300px;
+}
+
 .blog-header {
     border-bottom: 1px solid #e5e5e5;
     margin-bottom: 0;
@@ -84,5 +88,13 @@ a:hover {
 @media (max-width: 550px) {
     .blog-pages {
         flex-wrap: wrap;
+    }
+
+    .barLink {
+        margin-bottom: 1rem;
+    }
+
+    .vertLine {
+        display: none;
     }
 }

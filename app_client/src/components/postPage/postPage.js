@@ -29,10 +29,13 @@ export class PostPage extends React.Component {
         return (
             <div className='postBody'>
                 <h1>«{post.title}»</h1>
+                <div className='bodyImageDiv'>
+                    <img src={ post.newBodyPath } alt="postImg" className='bodyImage' />
+                </div>
                 <p className='textWidth'>{post.mainText}</p>
 
-                {user ? (
-                    <div>
+                {user && user.role === 'admin' ? (
+                    <div className='adminBtns'>
                         <button onClick={this.onClick} className='btn btn-danger mr-2'>Удалить</button>
                         <Link className='btn btn-warning mr-2' to={`/update/${post.id}`}>Редактировать</Link>
                     </div>
